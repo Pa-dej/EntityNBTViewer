@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "entitynbtviewer",
+  "version": "0.1.3",
+  "name": "EntityNBTViewer",
+  "description": "More info about entity",
+  "authors": [
+    "Padej_"
+  ],
+  "contact": {
+    "issues": "https://discord.com/users/672269411385868309"
+  },
+  "license": "MIT",
+  "icon": "assets/entitynbtviewer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.padej.entitynbtviewer.client.EntityNBTViewerClient"
+    ],
+    "main": [
+      "me.padej.entitynbtviewer.EntityNBTViewer"
+    ]
+  },
+  "mixins": [
+    "entitynbtviewer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.20.0 <=1.20.2"
+  }
+}
